@@ -1,0 +1,32 @@
+<svg width="1000" height="130" viewBox="0 0 1000 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="130" rx="24" fill="#161829" />
+
+  <!-- Title with Curly Braces -->
+  <text
+    x="50%"
+    y="65"
+    text-anchor="middle"
+    font-family="Montserrat, Consolas, monospace"
+    font-size="48"
+    font-weight="bold"
+    fill="#FFFFFF"
+    dominant-baseline="middle"
+  >
+    Meets <tspan fill="#2DE1FC">{</tspan> Code <tspan fill="#2DE1FC">}</tspan>
+  </text>
+
+  <!-- Slogan -->
+  <text
+    x="50%"
+    y="108"
+    text-anchor="middle"
+    font-family="Montserrat, Arial, sans-serif"
+    font-size="15"
+    font-weight="500"
+    fill="#B1BACB"
+    dominant-baseline="middle"
+  >
+    Where Innovation <tspan fill="#2DE1FC">Meets</tspan> Talent
+  </text>
+</svg>
