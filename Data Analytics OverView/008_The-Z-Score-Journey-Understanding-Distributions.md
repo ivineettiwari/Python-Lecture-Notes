@@ -38,9 +38,9 @@ Its properties are mathematically perfect:
 
 #### **C. The Empirical Rule (68-95-99.7 Rule)**
 This is a crucial rule of thumb for any normally distributed data:
-*   **≈68%** of the data falls within **±1 standard deviation** of the mean. `(μ - σ, μ + σ)`
-*   **≈95%** of the data falls within **±2 standard deviations** of the mean. `(μ - 2σ, μ + 2σ)`
-*   **≈99.7%** of the data falls within **±3 standard deviations** of the mean. `(μ - 3σ, μ + 3σ)`
+*   **≈68%** of the data falls within **±1 standard deviation** of the mean.$\scriptsize (μ - σ, μ + σ)$
+*   **≈95%** of the data falls within **±2 standard deviations** of the mean.$\scriptsize (μ - 2σ, μ + 2σ)$
+*   **≈99.7%** of the data falls within **±3 standard deviations** of the mean.$\scriptsize (μ - 3σ, μ + 3σ)$
 This rule allows us to quickly estimate probabilities and identify outliers.
 
 ---
@@ -66,7 +66,7 @@ The total area under this curve, representing the total probability, is always e
 The magic of converting *any* normal distribution to the standard normal is achieved through the **Z-Score**.
 
 #### **A. The Formula**
-For a data point `X` from a distribution with mean `μ` and standard deviation `σ`, its Z-score is:
+For a data point$\scriptsizeX$ from a distribution with mean$\scriptsizeμ$ and standard deviation$\scriptsizeσ`, its Z-score is:
 $$
 Z = \frac{X - \mu}{\sigma}
 $$
@@ -98,7 +98,7 @@ In statistical inference, certain Z-scores mark the boundaries of "unusual" or "
 
 It's important to see how the normal distribution fits into the larger ecosystem.
 *   **Uniform Distribution:** Every outcome has an equal probability (e.g., a fair die roll). It is rectangular, not bell-shaped.
-*   **Binomial Distribution:** Models the number of successes in `n` independent binary trials (e.g., number of heads in 10 coin flips). **Crucially, as `n` becomes large, the binomial distribution begins to closely approximate a normal distribution.** This is a preview of the Central Limit Theorem.
+*   **Binomial Distribution:** Models the number of successes in$\scriptsizen$ independent binary trials (e.g., number of heads in 10 coin flips). **Crucially, as$\scriptsizen$ becomes large, the binomial distribution begins to closely approximate a normal distribution.** This is a preview of the Central Limit Theorem.
 *   **Normal Distribution:** The continuous, symmetric limit of many other distributions, including the binomial.
 
 ---
@@ -177,7 +177,7 @@ plt.show()
 ```
 
 **Expected Output & Analysis:**
-The code will calculate that the student's performance in Physics has a higher Z-score, indicating it was the *relatively* better performance. It will then show how to use the `norm.cdf()` function to find probabilities associated with Z-scores, confirming the Empirical Rule. Finally, it will generate a plot of the standard normal curve, shading the 95% confidence region and a tail area.
+The code will calculate that the student's performance in Physics has a higher Z-score, indicating it was the *relatively* better performance. It will then show how to use the$\scriptsizenorm.cdf()$ function to find probabilities associated with Z-scores, confirming the Empirical Rule. Finally, it will generate a plot of the standard normal curve, shading the 95% confidence region and a tail area.
 
 ---
 

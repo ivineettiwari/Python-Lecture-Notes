@@ -1,7 +1,9 @@
 ## **Lecture Notes: The Binomial Distribution - Modeling Binary Outcomes**
 
 **Professor:** Vineet Tiwari
+
 **Course:** Probability and Statistics for Data Science
+
 **Lecture Topic:** The Binomial Distribution: Theory, Applications, and Implementation
 
 ---
@@ -29,14 +31,17 @@ It is defined by just two parameters:
 2.  **`p`**: The probability of success on a single trial.
 
 The probability of getting exactly `k` successes in `n` trials is given by the formula:
-\[
+$$
 P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
-\]
+$$
 Let's break down this famous formula:
-*   **`\binom{n}{k}`**: The **binomial coefficient**, pronounced "n choose k". It calculates the number of possible ways to arrange `k` successes in `n` trials.
-    `\binom{n}{k} = \frac{n!}{k!(n-k)!}`
-*   **`p^k`**: The probability of getting `k` successes.
-*   **`(1-p)^{n-k}`**: The probability of getting `n-k` failures.
+*   **$\scriptsize\binom{n}{k}$**: The **binomial coefficient**, pronounced "n choose k". It calculates the number of possible ways to arrange `k` successes in `n` trials.
+$$
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+$$
+*   **$\scriptsize p^k $**: The probability of getting `k` successes.
+*   **$\scriptsize (1-p)^{n-k} $**: The probability of getting `n-k` failures.
+*   **$\scriptsize (1-p)^{n-k} $**: The probability of getting `n-k` failures.
 
 The product of these three terms gives the total probability for exactly `k` successes.
 
@@ -59,13 +64,13 @@ For a process to be accurately modeled by the binomial distribution, it **must**
 
 Once we know `n` and `p`, we can describe the entire distribution.
 
-*   **Mean (Expected Value):** `μ = n * p`
+*   **Mean (Expected Value):** $ μ = n * p $
     *   *Interpretation:* The long-run average number of successes we expect. If we flip a fair coin (p=0.5) 100 times, we *expect* 50 heads on average.
 
-*   **Variance:** `σ² = n * p * (1-p)`
+*   **Variance:** $ σ² = n * p * (1-p) $
     *   *Interpretation:* Measures the spread or variability in the number of successes.
 
-*   **Standard Deviation:** `σ = \sqrt{n * p * (1-p)}`
+*   **Standard Deviation:** $ σ = \sqrt{n * p * (1-p)} $
     *   *Interpretation:* The typical deviation from the mean.
 
 *   **Shape:** The shape of the distribution depends on `p` and `n`.
@@ -80,9 +85,9 @@ Once we know `n` and `p`, we can describe the entire distribution.
 We are often interested in cumulative probabilities:
 
 1.  **Exactly `k` successes:** `P(X = k)` → Use the PMF directly.
-2.  **At most `k` successes:** `P(X ≤ k)` → The Cumulative Distribution Function (CDF). This is the sum of `P(X=0) + P(X=1) + ... + P(X=k)`.
-3.  **At least `k` successes:** `P(X ≥ k) = 1 - P(X ≤ k-1)`.
-4.  **Between `a` and `b` successes:** `P(a ≤ X ≤ b) = P(X ≤ b) - P(X ≤ a-1)`.
+2.  **At most `k` successes:** `P(X ≤ k)` → The Cumulative Distribution Function (CDF). This is the sum of $\scriptsize P(X=0) + P(X=1) + ... + P(X=k) $
+3.  **At least `k` successes:** $\scriptsize P(X ≥ k) = 1 - P(X ≤ k-1) $
+4.  **Between `a` and `b` successes:** $\scriptsize P(a ≤ X ≤ b) = P(X ≤ b) - P(X ≤ a-1)$
 
 Calculating these by hand for large `n` is tedious. This is where statistical software becomes indispensable.
 

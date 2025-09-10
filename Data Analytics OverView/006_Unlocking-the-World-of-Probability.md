@@ -1,7 +1,9 @@
 ## **Lecture Notes: Unlocking the World of Probability**
 
 **Professor:** Vineet Tiwari
+
 **Course:** Foundations of Data Science & Statistical Inference
+
 **Lecture Topic:** The Language of Uncertainty: Probability Theory and Its Applications
 
 ---
@@ -61,9 +63,9 @@ These rules are the formulas that allow us to compute complex probabilities from
 
 #### **1. The Addition Rule**
 This rule calculates the probability that **either** event A **or** event B occurs.
-\[
+$$
 P(A \cup B) = P(A) + P(B) - P(A \cap B)
-\]
+$$
 *   **Why subtract P(A ∩ B)?** If we just add P(A) and P(B), we are double-counting the probability of the outcomes where both A and B occur. The subtraction corrects for this.
 *   **Special Case for Mutually Exclusive Events:** If A and B are mutually exclusive, `P(A ∩ B) = 0`, so the rule simplifies to `P(A ∪ B) = P(A) + P(B)`.
 
@@ -77,20 +79,34 @@ P(A \cap B) = P(A) \times P(B|A)
 
 #### **3. Conditional Probability**
 This is a concept of paramount importance, especially in machine learning (e.g., Naive Bayes classifiers).
-\[
+$$
 P(A|B) = \frac{P(A \cap B)}{P(B)}, \quad \text{provided } P(B) > 0
-\]
+$$
 It answers the question: "How does the probability of A change now that I have the information that B has happened?"
 
 #### **4. Bayes' Theorem**
 A profound rearrangement of the definition of conditional probability. It allows us to "reverse" the conditioning.
-\[
+$$
 P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-\]
+$$
+
 *   **P(A)** is the **prior probability** – our initial belief about A before seeing evidence B.
 *   **P(B|A)** is the **likelihood** – the probability of observing evidence B given that A is true.
 *   **P(A|B)** is the **posterior probability** – our updated belief about A after seeing evidence B.
-*   **Application:** Medical testing (finding the probability of having a disease given a positive test result), spam filtering, and many more.
+
+**Application:** Medical testing (finding the probability of having a disease given a positive test result), spam filtering, and many more.
+
+**Example (Spam Filtering)**
+
+Suppose we want to classify an email as *Spam* (S) or *Not Spam* (¬S).
+
+$$
+P(S| \text{contains "offer"}) = \frac{P(\text{contains "offer"}|S) \cdot P(S)}{P(\text{contains "offer"})}
+$$
+
+* Prior: $P(S)$ → chance any email is spam.
+* Likelihood: $P(\text{contains "offer"}|S)$ → how often spam emails contain "offer".
+* Posterior: Updated probability that the email is spam given it contains "offer".
 
 ---
 
