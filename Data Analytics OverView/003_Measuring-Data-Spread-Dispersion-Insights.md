@@ -212,6 +212,15 @@ Identified Outliers: [100] # Note: 100 is just *barely* inside the limit in this
 
 This comprehensive analysis moves beyond simple calculation to true interpretation, highlighting why dispersion matters.
 
-**Next Lecture:** We will put all of these concepts together to understand **Data Distributions**, focusing on the powerful Normal Distribution and how to work with skewed data.
+**Next Lecture:** We will explore **Unlocking Relationships - The Power of Association**, where we'll learn how to measure connections between variables using covariance and correlation. We'll discover how to identify relationships in data, understand the difference between correlation and causation, and learn to visualize these relationships effectively.
+
+**Topics to be covered:**
+- Moving from single-variable to two-variable analysis
+- Understanding covariance and its interpretation
+- Pearson correlation coefficient and its properties
+- Spearman rank correlation for non-linear relationships
+- Visualizing relationships through scatter plots and correlation matrices
+- The critical distinction between correlation and causation
+- Real-world applications in business, science, and social research
 
 **Are there any questions?**

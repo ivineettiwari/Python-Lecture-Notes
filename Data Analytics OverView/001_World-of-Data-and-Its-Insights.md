@@ -155,6 +155,13 @@ print("This could be a useful baseline metric for a business analyst.")
 *   This process is embedded within the broader **Data Science Lifecycle**, which starts with a problem and ends with communicating insights.
 *   Mastery of these foundational concepts is essential before diving into more complex algorithms and tools.
 
-**Next Lecture:** We will dive deeper into the **data preparation** stage, exploring more sophisticated techniques for handling missing data, detecting outliers, and feature engineering.
+**Next Lecture:** We will dive into **The Basics of Statistics - Descriptive Insights**, where we'll learn how to summarize and understand data through measures of central tendency (mean, median, mode) and measures of dispersion (range, variance, standard deviation). We'll also explore the power of data visualization and common pitfalls to avoid when interpreting statistical summaries.
+
+**Topics to be covered:**
+- Understanding descriptive statistics and their importance
+- Measures of central tendency: mean, median, and mode
+- Measures of dispersion: range, variance, standard deviation, and IQR
+- The power of data visualization in statistical analysis
+- Real-world applications and common pitfalls in data interpretation
 
 **Are there any questions?**

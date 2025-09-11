@@ -121,4 +121,15 @@ You cannot manage what you do not measure.
 
 **Your financial future is heavily influenced by this number. Take control of it today.**
 
+**Next Lecture:** We will dive into **Inferential Statistics - Beyond the Data**, where we'll learn how to make inferences about entire populations based on sample data. We'll explore the fundamental concepts of statistical inference, sampling distributions, and how to draw conclusions from limited data.
+
+**Topics to be covered:**
+- Understanding the difference between descriptive and inferential statistics
+- Population vs. sample concepts
+- Sampling distributions and their properties
+- Point estimation and interval estimation
+- The role of probability in statistical inference
+- Introduction to hypothesis testing framework
+- Real-world applications in research and business
+
 **Are there any questions?**

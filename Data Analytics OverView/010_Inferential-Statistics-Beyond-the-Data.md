@@ -200,6 +200,15 @@ The code will output a 95% CI for the first sample. It will then perform an inde
 4.  **P-Value is Not Everything:** A statistically significant result (low p-value) does not imply a practically important result. **Always report effect sizes.**
 5.  **Ethics Matter:** Be aware of and avoid pitfalls like p-hacking and multiple comparisons without correction. Practice transparent and reproducible research.
 
-**Next Lecture:** We will delve deeper into one of the most powerful tools in the data scientist's arsenal: **Linear Regression.**
+**Next Lecture:** We will explore **Decoding Hypothesis Testing - Methods and P-Values**, where we'll dive deep into the mechanics of hypothesis testing, understand what p-values really mean, and learn how to properly interpret statistical significance. We'll also explore common misconceptions and best practices in hypothesis testing.
+
+**Topics to be covered:**
+- Understanding the hypothesis testing framework
+- What p-values really mean and common misconceptions
+- Type I and Type II errors and their consequences
+- Choosing appropriate significance levels
+- One-tailed vs. two-tailed tests
+- Power analysis and sample size determination
+- Common pitfalls in hypothesis testing and how to avoid them
 
 **Are there any questions?**

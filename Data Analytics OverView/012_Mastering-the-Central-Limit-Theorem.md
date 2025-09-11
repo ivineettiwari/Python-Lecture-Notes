@@ -205,6 +205,15 @@ The print statements will show that the mean of the sample means is always very 
 
 **The CLT is why we can do data science. It is the bridge that connects the messy reality of data to the powerful, elegant tools of statistical inference.**
 
-**Next Lecture:** We will put the CLT into direct practice by constructing **Confidence Intervals** for population means.
+**Next Lecture:** We will explore **Population Parameters Estimation Made Simple**, where we'll learn how to estimate population parameters using sample data. We'll cover point estimation, interval estimation, and the methods used to construct confidence intervals for various population parameters.
+
+**Topics to be covered:**
+- Understanding population parameters vs. sample statistics
+- Point estimation methods and properties
+- Interval estimation and confidence intervals
+- Methods for estimating population means and proportions
+- Sample size determination for estimation
+- Margin of error and its interpretation
+- Real-world applications in research and business
 
 **Are there any questions?**

@@ -224,6 +224,15 @@ print(f"Expected Value of buying a ticket: ${expected_value:.2f}")
 4.  **Simulation Validates Theory:** Using code (like the Law of Large Numbers demo), we can experimentally verify theoretical results.
 5.  **Expected Value Drives Decision-Making:** It provides a single-number summary for choosing between risky alternatives.
 
-**Next Lecture:** We will combine probability and descriptive statistics to move from describing samples to making inferences about entire populations, entering the realm of **Inferential Statistics.**
+**Next Lecture:** We will explore **The Binary World of Binomial Distribution**, where we'll learn how to model binary outcomes and count-based events. We'll understand when and how to use the binomial distribution, its properties, and practical applications in A/B testing, quality control, and survey analysis.
+
+**Topics to be covered:**
+- Understanding binary outcomes and the binomial setting
+- The binomial distribution formula and its parameters
+- Mean, variance, and shape of binomial distributions
+- Normal approximation to the binomial distribution
+- Practical applications in A/B testing and quality control
+- Hypothesis testing with binomial data
+- Real-world examples in business and research
 
 **Are there any questions?**

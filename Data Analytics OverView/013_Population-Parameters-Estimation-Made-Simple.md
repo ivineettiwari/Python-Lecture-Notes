@@ -216,6 +216,15 @@ The final loop will demonstrate the most important practical takeaway: **as the 
 
 This workflow transforms a single, fragile data point into a robust, honest, and actionable estimate of the truth.
 
-**Next Lecture:** We will use these interval estimates to make formal decisions by introducing **Hypothesis Testing**.
+**Next Lecture:** We will explore **P-Values and Errors - Navigating Statistical Uncertainty**, where we'll dive deep into understanding p-values, statistical errors, and how to properly interpret statistical results. We'll learn about Type I and Type II errors, power analysis, and common misconceptions in statistical testing.
+
+**Topics to be covered:**
+- Understanding p-values and their proper interpretation
+- Type I and Type II errors and their consequences
+- Statistical power and its importance
+- Effect size and practical significance
+- Multiple comparisons and the multiple testing problem
+- Common misconceptions about p-values
+- Best practices for reporting statistical results
 
 **Are there any questions?**

@@ -196,6 +196,15 @@ print("Residual Skew:", skew(residuals, bias=False))
 sm.qqplot(residuals, line='s'); plt.title("Q-Q Plot of Model Residuals"); plt.show()
 ```
 
-**Next Lecture:** We will explore the concept of **Kurtosis**—the "tailedness" of a distribution—and how it, combined with skewness, provides a complete picture of a distribution's shape.
+**Next Lecture:** We will dive into **Unlocking the World of Probability**, where we'll learn the fundamental language of uncertainty and randomness. We'll explore probability theory, conditional probability, Bayes' theorem, and various probability distributions that form the foundation of statistical inference.
+
+**Topics to be covered:**
+- Understanding probability as the language of uncertainty
+- Sample spaces, events, and probability rules
+- Conditional probability and independence
+- Bayes' theorem and its applications
+- Common probability distributions (Binomial, Poisson, Normal)
+- Expected value and variance in probability
+- Real-world applications in weather forecasting, finance, and medicine
 
 **Are there any questions?**

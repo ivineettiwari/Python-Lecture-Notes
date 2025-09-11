@@ -193,6 +193,15 @@ The code will output the mean, variance, and probabilities for the chosen parame
 5.  **From Exact to Cumulative:** We can calculate the probability of exact counts (`P(X=k)`) or ranges of counts (`P(X<=k)`, `P(X>=k)`) using the PMF and CDF.
 6.  **Visualization is Key:** Plotting the PMF is the best way to understand the distribution's shape, center, and spread.
 
-**Next Lecture:** We will explore the **Poisson Distribution**, a close relative of the binomial distribution that is used to model the number of rare events occurring in a fixed interval of time or space.
+**Next Lecture:** We will explore **The Z-Score Journey - Understanding Distributions and Standardization**, where we'll learn how to standardize data using z-scores and understand the powerful normal distribution. We'll discover how z-scores allow us to compare data from different scales and make probabilistic statements about data.
+
+**Topics to be covered:**
+- Understanding the normal distribution and its properties
+- What are z-scores and why they matter
+- The empirical rule (68-95-99.7 rule)
+- Standardizing data for comparison
+- Using z-scores for outlier detection
+- The central limit theorem introduction
+- Real-world applications in quality control and research
 
 **Are there any questions?**

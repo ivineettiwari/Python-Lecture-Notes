@@ -219,6 +219,14 @@ IQR: 20.0
 ```
 The boxplot will clearly show the value `110` as an outlier (a dot beyond the "whisker"). The histogram will show the shape of the data's distribution. This visual confirmation is vital and complements the numerical summaries perfectly.
 
-**Next Lecture:** We will move from *describing* a single dataset to *inferring* things about a larger population using **Inferential Statistics**, covering concepts like confidence intervals and hypothesis testing.
+**Next Lecture:** We will dive deeper into **Measuring Data Spread - Dispersion Insights**, where we'll explore why the average alone is often misleading and learn comprehensive measures of variability. We'll cover range, variance, standard deviation, interquartile range, and coefficient of variation, along with their real-world applications in finance, quality control, and healthcare.
+
+**Topics to be covered:**
+- Understanding why dispersion matters in data analysis
+- Key measures of dispersion: range, variance, standard deviation, IQR, and CV
+- The Empirical Rule and its applications
+- Visualizing dispersion through box plots and histograms
+- Real-world applications in finance, manufacturing, and healthcare
+- Common pitfalls and how to avoid them when measuring spread
 
 **Are there any questions?**

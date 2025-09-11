@@ -193,6 +193,15 @@ The code will calculate that the student's performance in Physics has a higher Z
 4.  **The Standard Normal Distribution:** Is the specific normal distribution with μ=0 and σ=1. All normal distributions can be transformed into this scale using the Z-score formula.
 5.  **Critical Tool:** Z-scores are critical for **hypothesis testing, constructing confidence intervals, and identifying outliers.**
 
-**Next Lecture:** We will use everything we've learned about the normal distribution and Z-scores to make the leap from describing samples to making inferences about populations. This is the heart of **Inferential Statistics.**
+**Next Lecture:** We will explore **The T-Score - Demystifying the Credit Score**, where we'll learn about credit scoring systems and how they relate to statistical concepts. We'll understand how financial institutions use standardized scoring to assess creditworthiness and make lending decisions.
+
+**Topics to be covered:**
+- Understanding what credit scores are and why they matter
+- How credit scores are calculated and standardized
+- The relationship between credit scores and statistical concepts
+- Factors that influence credit scores
+- Building and maintaining good credit
+- Real-world applications in personal finance
+- Understanding credit reports and score ranges
 
 **Are there any questions?**

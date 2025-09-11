@@ -201,6 +201,15 @@ print(f"Effect Size (Cramer's V): {cramers_v:.3f}")
 4.  **A p-value > 0.05 is not a "failure":** It simply means the data does not provide strong enough evidence to support the alternative hypothesis.
 5.  **Always go beyond the p-value:** Report effect sizes and confidence intervals to provide a complete picture of your findings and their practical importance.
 
-**Next Lecture:** We will explore the analysis of variance (ANOVA), which extends the t-test to compare means across three or more groups.
+**Next Lecture:** We will explore **Mastering the Central Limit Theorem**, one of the most important and powerful concepts in statistics. We'll learn how this theorem allows us to make inferences about populations using sample data, and understand why it's the foundation of most statistical methods.
+
+**Topics to be covered:**
+- Understanding what the Central Limit Theorem states
+- Why the CLT is so important in statistics
+- Sampling distributions and their properties
+- How sample size affects the CLT
+- Practical applications of the CLT
+- Conditions for the CLT to apply
+- Real-world examples and demonstrations
 
 **Are there any questions?**

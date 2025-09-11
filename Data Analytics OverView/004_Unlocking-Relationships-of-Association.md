@@ -186,6 +186,15 @@ The code will output the covariance and correlation matrices. The key number is 
 
 The scatter plot is the most important part. It will show a clear cloud of points sloping upwards to the right, with the red regression line cutting through the center. This visual confirmation is essential. It proves the linear pattern that the correlation coefficient `r` quantifies.
 
-**Next Lecture:** We will build on this concept to make predictions. If we know the relationship between X and Y, can we predict Y for a new value of X? This is the world of **Linear Regression.**
+**Next Lecture:** We will explore **Decoding Skewness - Understanding Data Distribution**, where we'll learn how to identify, measure, and correct for skewed data distributions. We'll discover why many real-world datasets are not normally distributed and how to handle this common challenge in data analysis.
+
+**Topics to be covered:**
+- Understanding what skewness means and why it matters
+- Methods for detecting and measuring skewness
+- The impact of skewness on statistical analyses
+- Techniques for transforming skewed data
+- Box-Cox and other transformation methods
+- Real-world examples of skewed distributions
+- Best practices for handling non-normal data
 
 **Are there any questions?** Remember, the most important question to ask after finding a correlation is: "What is the underlying mechanism that could explain this?"
