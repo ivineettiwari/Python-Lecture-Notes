@@ -30,9 +30,9 @@ Today, we dive deep into **Skewness**, the statistical measure of this asymmetry
     *   **Relationship:** `Mean < Median < Mode`
     *   **Example:** Age at retirement. Most people retire around a common age (e.g., 65), but some retire early, creating a long left tail.
 
-![alt text](image.png)
+![alt text](image/image.png)
 
-![alt text](image-1.png)
+![alt text](image/image-1.png)
 
 **Why it matters profoundly:**
 1.  **Choice of Statistical Tests:** Parametric tests (t-tests, ANOVA, linear regression) assume normally distributed errors. Skewness violates this assumption.

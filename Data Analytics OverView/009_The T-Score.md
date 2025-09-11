@@ -1,7 +1,9 @@
 s## **Lecture Notes: Demystifying the Credit Score (T Score) - Your Financial Passport**
 
 **Professor:** Vineet Tiwari
+
 **Course:** Personal Finance & Financial Literacy
+
 **Lecture Topic:** The Credit Score: Understanding, Building, and Maintaining Your Financial Reputation
 
 ---
@@ -104,6 +106,8 @@ You cannot manage what you do not measure.
     *   **TRUTH:** This is completely false. You can (and should) pay your balance in full every month to avoid interest charges. The activity of using the card and paying it off is what gets reported.
 *   **PITFALL:** Maxing out credit cards.
     *   **TRUTH:** This leads to a very high utilization ratio, which is one of the fastest ways to tank your score.
+
+![alt text](image/image-3.png)
 
 ---
 

@@ -1,7 +1,9 @@
 ## **Lecture Notes: Inferential Statistics - Beyond the Data**
 
-**Professor:** [Your Name]
+**Professor:** Vineet Tiwari
+
 **Course:** Advanced Data Analysis and Statistical Inference
+
 **Lecture Topic:** From Description to Decision: The Framework of Inferential Statistics
 
 ---

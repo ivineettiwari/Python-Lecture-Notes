@@ -1,7 +1,9 @@
 ## **Lecture Notes: The Z-Score Journey - Understanding Distributions and Standardization**
 
 **Professor:** Vineet Tiwari
+
 **Course:** Foundations of Inferential Statistics
+
 **Lecture Topic:** The Normal Distribution, Standardization, and the Power of the Z-Score
 
 ---
@@ -43,6 +45,8 @@ This is a crucial rule of thumb for any normally distributed data:
 *   **≈99.7%** of the data falls within **±3 standard deviations** of the mean.$\scriptsize (μ - 3σ, μ + 3σ)$
 This rule allows us to quickly estimate probabilities and identify outliers.
 
+![alt text](image/image-2.png)
+
 ---
 
 ### **3. The Standard Normal Distribution: The Golden Standard**
@@ -66,7 +70,7 @@ The total area under this curve, representing the total probability, is always e
 The magic of converting *any* normal distribution to the standard normal is achieved through the **Z-Score**.
 
 #### **A. The Formula**
-For a data point$\scriptsizeX$ from a distribution with mean$\scriptsizeμ$ and standard deviation$\scriptsizeσ`, its Z-score is:
+For a data point $X$ from a distribution with mean $μ$ and standard deviation $σ$, its Z-score is:
 $$
 Z = \frac{X - \mu}{\sigma}
 $$
