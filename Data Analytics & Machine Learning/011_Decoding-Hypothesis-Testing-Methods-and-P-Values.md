@@ -1,6 +1,6 @@
 ## **Lecture Notes: Decoding Hypothesis Testing - Methods, P-Values, and Practical Application**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Statistical Inference and Decision Making
 

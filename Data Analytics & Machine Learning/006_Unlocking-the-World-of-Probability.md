@@ -1,6 +1,6 @@
 ## **Lecture Notes: Unlocking the World of Probability**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Foundations of Data Science & Statistical Inference
 
@@ -71,9 +71,9 @@ $$
 
 #### **2. The Multiplication Rule**
 This rule calculates the probability that **both** event A **and** event B occur.
-\[
+$$
 P(A \cap B) = P(A) \times P(B|A)
-\]
+$$
 *   **P(B|A)** is the **conditional probability** of B given A. It is the probability that B occurs, given that we know A has already occurred.
 *   **Special Case for Independent Events:** If A and B are independent, `P(B|A) = P(B)`, so the rule simplifies to `P(A ∩ B) = P(A) * P(B)`.
 

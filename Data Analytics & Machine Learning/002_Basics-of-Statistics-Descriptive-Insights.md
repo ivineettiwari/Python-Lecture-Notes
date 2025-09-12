@@ -1,6 +1,6 @@
 ## **Lecture Notes: The Basics of Statistics - Descriptive Insights**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Foundations of Data Analysis
 

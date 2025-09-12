@@ -1,6 +1,6 @@
 ## **Lecture Notes: Measuring Data Spread - Dispersion Insights**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 **Course:** Foundations of Data Analysis
 **Lecture Topic:** Beyond the Average: Quantifying Uncertainty with Measures of Dispersion
 

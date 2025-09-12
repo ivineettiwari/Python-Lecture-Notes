@@ -1,6 +1,6 @@
 ## **Lecture Notes: Population Parameters - Estimation Made Simple**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Statistical Inference for Data Science
 
@@ -51,7 +51,7 @@ A point estimate is a single number used as the best guess for a population para
     *   $p̂$ is an **estimator** for $P$.
     *   $s$ is an **estimator** for $σ$.
 *   **The Estimate:** The specific numerical value we get from our sample is the **point estimate**.
-    *   If our sample of 100 smartphones has a mean battery life of $x̄ = 8.5 hours`, then $8.5 hours$ is our point estimate for the true population mean $μ$.
+    *   If our sample of 100 smartphones has a mean battery life of $x̄ = 8.5  hours$ , then $8.5 hours$ is our point estimate for the true population mean $μ$.
 
 #### **The Critical Limitation of a Point Estimate**
 A point estimate is almost certainly wrong. It provides no information about its own reliability, precision, or how close it is likely to be to the true parameter. Two different samples will yield two different point estimates. This inherent variability is called **sampling error**.
@@ -64,7 +64,7 @@ Because a point estimate is insufficient, we use an **interval estimate**, or **
 
 A Confidence Interval provides a range of plausible values for the population parameter.
 
-*   **Construction:** $CI = Point Estimate ± Margin of Error`
+*   **Construction:** $CI = Point Estimate ± Margin of Error$
 *   **Margin of Error (ME):** This quantity determines the width of the interval. It is a product of two components:
     1.  **Critical Value:** A value from a theoretical distribution (like the Z or t-distribution) that corresponds to the desired **confidence level**.
     2.  **Standard Error (SE):** The standard deviation of the sampling distribution of the statistic. It measures the variability of the estimate.

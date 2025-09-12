@@ -1,6 +1,6 @@
 ## **Lecture Notes: Decoding Skewness - Understanding Data Distribution**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Advanced Data Analysis & Statistical Modeling
 
@@ -58,18 +58,18 @@ We move from visual assessment to numerical measurement.
 
 #### **A. Moment Coefficient (Pearson's Moment Coefficient of Skewness)**
 This is the most common measure, based on the third standardized moment.
-\[
+$$
 g_1 = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^3}{s^3}
-\]
+$$
 Where `s` is the sample standard deviation.
 *   **Interpretation:** `g1 = 0` (normal), `g1 > 0` (positive skew), `g1 < 0` (negative skew).
 *   **Limitation:** Sensitive to outliers, as it uses the mean and standard deviation.
 
 #### **B. Bowley's Coefficient (Quartile Skewness)**
 A robust, non-parametric measure based on quartiles.
-\[
+$$
 \text{Skew}_{\text{Bowley}} = \frac{(Q_3 - Q_2) - (Q_2 - Q_1)}{Q_3 - Q_1} = \frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}
-\]
+$$
 *   **Interpretation:** Same as above. Ranges from -1 to +1.
 *   **Advantage:** Not affected by extreme outliers. Use this when your data has heavy tails or you suspect extreme values.
 

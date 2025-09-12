@@ -1,6 +1,6 @@
 ## **Lecture Notes: Unlocking Relationships - The Power of Association**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 **Course:** Foundations of Data Analysis
 **Lecture Topic:** Measuring Connections: Covariance, Correlation, and the Stories They Tell (and Don't Tell)
 

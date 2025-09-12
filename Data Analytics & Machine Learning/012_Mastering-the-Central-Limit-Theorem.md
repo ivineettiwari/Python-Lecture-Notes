@@ -1,6 +1,6 @@
 ## **Lecture Notes: Mastering the Central Limit Theorem - The Engine of Inferential Statistics**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Probability Theory and Statistical Inference
 
@@ -64,7 +64,7 @@ The best way to understand the CLT is to see it in action. The process follows a
 
 ---
 
-### **5. Why the CLT is So Powerful: Universal Applications**
+### **5. Why the CLT(Central Limit Theorem) is So Powerful: Universal Applications**
 
 The CLT is the reason we can conduct inference across countless fields:
 

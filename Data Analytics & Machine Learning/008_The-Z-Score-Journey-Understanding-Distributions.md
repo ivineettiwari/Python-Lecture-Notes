@@ -1,6 +1,6 @@
 ## **Lecture Notes: The Z-Score Journey - Understanding Distributions and Standardization**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Foundations of Inferential Statistics
 

@@ -1,6 +1,6 @@
 ## **Lecture Notes: Inferential Statistics - Beyond the Data**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Advanced Data Analysis and Statistical Inference
 

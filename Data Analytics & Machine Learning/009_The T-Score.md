@@ -1,6 +1,6 @@
 s## **Lecture Notes: Demystifying the Credit Score (T Score) - Your Financial Passport**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Personal Finance & Financial Literacy
 

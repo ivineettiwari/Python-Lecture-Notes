@@ -1,6 +1,6 @@
 ## **Lecture Notes: The Binomial Distribution - Modeling Binary Outcomes**
 
-**Professor:** Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Probability and Statistics for Data Science
 

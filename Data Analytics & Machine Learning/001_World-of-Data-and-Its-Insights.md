@@ -1,6 +1,6 @@
 ## **Lecture Notes: Unraveling the World of Data and Its Insights**
 
-**Professor:** [Vineet Tiwari]
+**Guide:** [Vineet Tiwari]
 
 **Course:** Introduction to Data Science
 
