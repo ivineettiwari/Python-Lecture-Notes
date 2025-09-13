@@ -1,6 +1,6 @@
 ## **Detailed Lecture Notes: Feature Stores and Data Pipelines - Ensuring Consistency at Scale**
 
-**Guide:** Dr. Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Advanced Data Analysis and Statistical Inference
 
