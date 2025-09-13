@@ -1,6 +1,6 @@
 ## **Detailed Lecture Notes: Model Explainability with SHAP - Global and Local Insights**
 
-**Guide:** Dr. Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Advanced Data Analysis and Statistical Inference
 
