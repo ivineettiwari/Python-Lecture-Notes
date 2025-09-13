@@ -1,6 +1,6 @@
 ## **Detailed Lecture Notes: Model Deployment and Monitoring - From Notebook to Production**
 
-**Guide:** Dr. Vineet Tiwari
+**Guide:** Vineet Tiwari
 
 **Course:** Advanced Data Analysis and Statistical Inference
 
