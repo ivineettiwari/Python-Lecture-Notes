@@ -40,7 +40,7 @@ These measures attempt to identify a single value that best represents the entir
 
 #### **A. The Mean (Arithmetic Average)**
 *   **Calculation:** The sum of all values divided by the number of values.
-    `Mean = (Σx_i) / n`
+    $$Mean = \frac{Σx_i}{n}$$
 *   **Interpretation:** The mathematical "center of gravity" of the data.
 *   **Pros:** Uses all data points in its calculation; mathematically rigorous.
 *   **Cons:** Highly sensitive to **outliers** (extreme values). A single very large or very small value can pull the mean away from the majority of the data, making it misleading.
@@ -77,20 +77,20 @@ Knowing the center is not enough. Two datasets can have the exact same mean but 
 
 #### **B. The Variance**
 *   **Calculation:** The average of the squared differences from the mean.
-    `Variance (s²) = Σ(x_i - mean)² / (n - 1)` (for a sample)
+    $$Variance (s²) = \frac{Σ(x_i - mean)²}{(n - 1)}$$
 *   **Interpretation:** A measure of the average squared deviation. A higher variance means data points are more spread out.
 *   **Pros:** Uses all data points; foundational for more advanced stats.
 *   **Cons:** The units are squared (e.g., "dollars²", "minutes²"), which is not intuitively interpretable.
 
 #### **C. The Standard Deviation (SD)**
 *   **Calculation:** The square root of the variance.
-    `SD = √(Variance)`
+    $$SD = \sqrt{Variance}$$
 *   **Interpretation:** The typical distance of a data point from the mean. This is the single most important measure of spread.
 *   **Pros:** Expressed in the original units of the data (e.g., dollars, minutes), making it easy to understand and communicate. Along with the mean, it is the basis for the Empirical Rule (68-95-99.7 rule) in normal distributions.
 
 #### **D. The Interquartile Range (IQR)**
 *   **Calculation:** The range of the middle 50% of the data.
-    `IQR = Q3 (75th percentile) - Q1 (25th percentile)`
+    $$IQR = Q3 (75th percentile) - Q1 (25th percentile)$$
 *   **Interpretation:** A robust measure of spread that is not affected by outliers or extreme values.
 *   **Pros:** Like the median, it is **robust to outliers.** It is the key measure used in box plots to identify variability and potential outliers.
 
