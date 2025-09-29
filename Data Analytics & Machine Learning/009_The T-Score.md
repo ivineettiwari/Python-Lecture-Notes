@@ -1,4 +1,4 @@
-s## **Lecture Notes: Demystifying the Credit Score (T Score) - Your Financial Passport**
+## **Lecture Notes: Demystifying the Credit Score (T Score) - Your Financial Passport**
 
 **Guide:** Vineet Tiwari
 
