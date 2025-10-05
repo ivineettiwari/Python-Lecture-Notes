@@ -1,7 +1,3 @@
-Of course. Here is a detailed and explanatory set of lecture notes on Random Forests for Regression, adapting the ensemble concept for predicting continuous outcomes.
-
-***
-
 ## **Detailed Lecture Notes: Random Forests for Regression - Ensembles for Robust Prediction**
 
 **Guide:** Vineet Tiwari

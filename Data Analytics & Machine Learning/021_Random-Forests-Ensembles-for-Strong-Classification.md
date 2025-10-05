@@ -1,7 +1,3 @@
-Of course. Here is a detailed and explanatory set of lecture notes on Random Forests for Classification, building upon the foundation of decision trees and introducing the powerful concepts of ensemble learning.
-
-***
-
 ## **Detailed Lecture Notes: Random Forests - Ensembles for Robust Classification**
 
 **Guide:** Vineet Tiwari
