@@ -1,4 +1,70 @@
-## **Theory Questions (4)**
+### **Coding Questions (31)**
+
+| # | Question | Topic |
+|---|----------|-------|
+| 1 | Fibonacci Series (Iterative) | Loops |
+| 2 | Palindrome Check | String |
+| 3 | Factorial (Recursive) | Recursion |
+| 4 | Prime Number Check | Math |
+| 5 | Reverse a String | String |
+| 6 | Check Armstrong Number | Math |
+| 7 | Find Maximum in List | List |
+| 8 | Remove Duplicates from List | List |
+| 9 | Count Vowels in String | String |
+| 10 | Binary Search | Searching |
+| 11 | Bubble Sort | Sorting |
+| 12 | Find GCD (Euclidean Algorithm) | Math |
+| 13 | Check Anagram | String |
+| 14 | Find Second Largest Number | List |
+| 15 | Fibonacci (Recursive) | Recursion |
+| 16 | Sum of Digits | Math |
+| 17 | Check Leap Year | Conditional |
+| 18 | Pattern Printing (Triangle) | Nested Loops |
+| 19 | Merge Two Sorted Lists | List |
+| 20 | Find Missing Number | Math |
+| 21 | Count Character Frequency | Dictionary |
+| 22 | Lambda Function - Square Numbers | Lambda |
+| 23 | Map with Lambda - Double List | Map |
+| 24 | Filter with Lambda - Get Even | Filter |
+| 25 | Reduce with Lambda - Find Product | Reduce |
+| 26 | Map with Multiple Lists | Map |
+| 27 | Filter Strings by Length | Filter |
+| 28 | Reduce to Find Maximum | Reduce |
+| 29 | Exception Handling - Division | Exception |
+| 30 | Multiple Exception Handling | Exception |
+| 31 | Custom Exception | Exception |
+
+---
+
+### **Quick Reference: Syntax Examples**
+
+```python
+# Lambda
+square = lambda x: x**2
+
+# Map
+list(map(lambda x: x*2, [1,2,3]))
+
+# Filter
+list(filter(lambda x: x>0, [-1,2,-3,4]))
+
+# Reduce
+from functools import reduce
+reduce(lambda a,b: a+b, [1,2,3,4])
+
+# Exception Handling Template
+try:
+    # risky code
+except SpecificError:
+    # handle error
+else:
+    # if no error
+finally:
+    # always execute
+```
+
+
+## **Theory Questions**
 
 ### 1. Define Python.
 **Answer:** Python is a high-level, interpreted, interactive, and object-oriented scripting language. It is designed to be highly readable, using English keywords frequently where other languages use punctuation. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
@@ -28,6 +94,43 @@
 | Slower performance | Faster performance |
 | Uses `[]` brackets | Uses `()` parentheses |
 | More methods (append, remove, etc.) | Fewer methods |
+
+### 5. Difference between User-Defined Function (UDF) and Lambda Function.
+**Answer:**
+
+| Feature | User-Defined Function (UDF) | Lambda Function |
+|---------|----------------------------|-----------------|
+| **Definition** | Defined using `def` keyword | Defined using `lambda` keyword |
+| **Name** | Has a function name | Anonymous (no name) |
+| **Body** | Can have multiple statements | Single expression only |
+| **Return** | Explicit `return` statement | Implicitly returns expression |
+| **Use Case** | Complex logic, multiple lines | Simple one-liner operations |
+| **Example** | `def add(x,y): return x+y` | `lambda x,y: x+y` |
+
+### 6. What is Exception Handling in Python? Explain with keywords.
+**Answer:** Exception handling manages runtime errors gracefully without crashing the program.
+
+**Keywords:**
+- **`try`** : Block that may raise an exception
+- **`except`** : Catches and handles specific exceptions
+- **`else`** : Executes if no exception occurs
+- **`finally`** : Always executes (cleanup code)
+- **`raise`** : Manually trigger an exception
+
+**Example:**
+```python
+try:
+    x = int(input("Enter number: "))
+    result = 10 / x
+except ValueError:
+    print("Invalid number!")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print(f"Result: {result}")
+finally:
+    print("Execution complete")
+```
 
 ---
 
@@ -405,6 +508,174 @@ def char_frequency(s):
 # Example
 print(char_frequency("hello"))
 # {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+```
+
+---
+
+### 22. Lambda Function - Square Numbers
+**Question:** Create a lambda function to square a number.
+
+```python
+# Lambda function
+square = lambda x: x ** 2
+
+# Example
+print(square(5))  # 25
+print(square(10))  # 100
+```
+**Explanation:** Lambda takes one argument x and returns x². No `return` keyword needed.
+
+---
+
+### 23. Map with Lambda - Double List Elements
+**Question:** Use map() and lambda to double all elements in a list.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+doubled = list(map(lambda x: x * 2, numbers))
+
+print(doubled)  # [2, 4, 6, 8, 10]
+```
+**Explanation:** `map()` applies lambda function to each element. Returns map object, converted to list.
+
+---
+
+### 24. Filter with Lambda - Get Even Numbers
+**Question:** Use filter() and lambda to get even numbers from list.
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(evens)  # [2, 4, 6, 8, 10]
+```
+**Explanation:** `filter()` keeps elements where lambda returns True.
+
+---
+
+### 25. Reduce with Lambda - Find Product
+**Question:** Use reduce() and lambda to find product of all list elements.
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5]
+product = reduce(lambda x, y: x * y, numbers)
+
+print(product)  # 120 (1*2*3*4*5)
+```
+**Explanation:** `reduce()` cumulatively applies lambda to pairs of elements.
+
+---
+
+### 26. Map with Multiple Lists
+**Question:** Use map() to add corresponding elements from two lists.
+
+```python
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+sums = list(map(lambda x, y: x + y, list1, list2))
+
+print(sums)  # [6, 8, 10, 12]
+```
+**Explanation:** Lambda takes two arguments. Map processes multiple lists in parallel.
+
+---
+
+### 27. Filter Strings by Length
+**Question:** Use filter() to get strings longer than 3 characters.
+
+```python
+words = ["cat", "elephant", "dog", "tiger", "bird"]
+long_words = list(filter(lambda w: len(w) > 3, words))
+
+print(long_words)  # ['elephant', 'tiger', 'bird']
+```
+
+---
+
+### 28. Reduce to Find Maximum
+**Question:** Use reduce() to find maximum number in list.
+
+```python
+from functools import reduce
+
+numbers = [42, 17, 89, 3, 56, 23]
+max_num = reduce(lambda a, b: a if a > b else b, numbers)
+
+print(max_num)  # 89
+```
+
+---
+
+### 29. Exception Handling - Division
+**Question:** Write division program with exception handling.
+
+```python
+def safe_divide(a, b):
+    try:
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        return "Error: Cannot divide by zero!"
+    except TypeError:
+        return "Error: Please provide numbers!"
+    except Exception as e:
+        return f"Unexpected error: {e}"
+
+# Examples
+print(safe_divide(10, 2))    # 5.0
+print(safe_divide(10, 0))    # Error: Cannot divide by zero!
+print(safe_divide(10, "2"))  # Error: Please provide numbers!
+```
+
+---
+
+### 30. Multiple Exception Handling
+**Question:** Handle multiple exception types when converting and processing input.
+
+```python
+def process_input():
+    try:
+        user_input = input("Enter numbers separated by comma: ")
+        numbers = [int(x.strip()) for x in user_input.split(",")]
+        average = sum(numbers) / len(numbers)
+        print(f"Average: {average}")
+    
+    except ValueError:
+        print("Error: Please enter valid numbers only!")
+    except ZeroDivisionError:
+        print("Error: Empty list provided!")
+    except KeyboardInterrupt:
+        print("\nOperation cancelled by user")
+    finally:
+        print("Process completed")
+
+# process_input()  # Uncomment to test
+```
+
+---
+
+### 31. Custom Exception
+**Question:** Create and raise custom exception for age validation.
+
+```python
+class AgeTooLowError(Exception):
+    """Custom exception for age below minimum"""
+    pass
+
+def validate_age(age):
+    try:
+        if age < 18:
+            raise AgeTooLowError(f"Age {age} is below minimum 18")
+        else:
+            print(f"Age {age} is valid")
+    except AgeTooLowError as e:
+        print(f"Custom Exception: {e}")
+
+# Examples
+validate_age(25)  # Age 25 is valid
+validate_age(15)  # Custom Exception: Age 15 is below minimum 18
 ```
 
 ---
