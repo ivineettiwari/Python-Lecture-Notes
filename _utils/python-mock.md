@@ -684,6 +684,6 @@ validate_age(15)  # Custom Exception: Age 15 is below minimum 18
 
 | Type | Count |
 |------|-------|
-| Theory Questions | 4 |
-| Coding Questions | 21 |
-| **Total** | **25** |
+| Theory Questions | 6 |
+| Coding Questions | 25 |
+| **Total** | **31** |
