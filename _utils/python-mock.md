@@ -1,0 +1,418 @@
+## **Theory Questions (4)**
+
+### 1. Define Python.
+**Answer:** Python is a high-level, interpreted, interactive, and object-oriented scripting language. It is designed to be highly readable, using English keywords frequently where other languages use punctuation. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+
+### 2. What are the different data types in Python?
+**Answer:** Python has several built-in data types:
+- **Numeric:** `int`, `float`, `complex`
+- **Sequence:** `list`, `tuple`, `range`
+- **Text:** `str`
+- **Mapping:** `dict`
+- **Set:** `set`, `frozenset`
+- **Boolean:** `bool`
+- **Binary:** `bytes`, `bytearray`, `memoryview`
+
+### 3. What are the characteristics of Object-Oriented Programming (OOP) in Python?
+**Answer:** The four main OOP characteristics are:
+1. **Encapsulation:** Bundling data and methods within a class, hiding internal details.
+2. **Abstraction:** Hiding complex implementation and showing only essential features.
+3. **Inheritance:** Creating a new class using an existing class's properties.
+4. **Polymorphism:** Using a single interface with different underlying forms (e.g., method overriding).
+
+### 4. Differentiate between `list` and `tuple`.
+**Answer:**
+| List | Tuple |
+|------|-------|
+| Mutable (can change) | Immutable (cannot change) |
+| Slower performance | Faster performance |
+| Uses `[]` brackets | Uses `()` parentheses |
+| More methods (append, remove, etc.) | Fewer methods |
+
+---
+
+## **Coding Questions (21) - With Code & Explanation**
+
+---
+
+### 1. Fibonacci Series (Iterative)
+**Question:** Generate Fibonacci series up to n terms.
+
+```python
+def fibonacci(n):
+    a, b = 0, 1
+    result = []
+    for _ in range(n):
+        result.append(a)
+        a, b = b, a + b
+    return result
+
+# Example
+print(fibonacci(10))  # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+```
+**Explanation:** Uses two variables to track previous two numbers. Updates them in each iteration to generate next number. Time complexity: O(n).
+
+---
+
+### 2. Palindrome Check (String)
+**Question:** Check if a string is palindrome.
+
+```python
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+# Example
+print(is_palindrome("A man a plan a canal panama"))  # True
+print(is_palindrome("hello"))  # False
+```
+**Explanation:** Converts to lowercase, removes spaces, then compares string with its reverse.
+
+---
+
+### 3. Factorial (Recursive)
+**Question:** Find factorial of a number.
+
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+# Example
+print(factorial(5))  # 120
+```
+**Explanation:** Base case returns 1 for 0! and 1!. Recursive case multiplies n with factorial of n-1.
+
+---
+
+### 4. Prime Number Check
+**Question:** Check if a number is prime.
+
+```python
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Example
+print(is_prime(17))  # True
+print(is_prime(20))  # False
+```
+**Explanation:** Checks divisibility only up to square root of n for efficiency.
+
+---
+
+### 5. Reverse a String
+**Question:** Reverse a string without using slicing.
+
+```python
+def reverse_string(s):
+    reversed_str = ""
+    for char in s:
+        reversed_str = char + reversed_str
+    return reversed_str
+
+# Example
+print(reverse_string("Python"))  # nohtyP
+```
+**Explanation:** Iterates through each character and prepends it to result string.
+
+---
+
+### 6. Check Armstrong Number
+**Question:** Check if number is Armstrong (sum of cubes of digits equals number).
+
+```python
+def is_armstrong(n):
+    digits = str(n)
+    num_digits = len(digits)
+    total = sum(int(d) ** num_digits for d in digits)
+    return total == n
+
+# Example
+print(is_armstrong(153))  # True (1³+5³+3³=153)
+print(is_armstrong(123))  # False
+```
+**Explanation:** Converts number to string, raises each digit to power of total digits, sums and compares.
+
+---
+
+### 7. Find Maximum in List
+**Question:** Find maximum element without using max().
+
+```python
+def find_max(lst):
+    if not lst:
+        return None
+    max_val = lst[0]
+    for num in lst:
+        if num > max_val:
+            max_val = num
+    return max_val
+
+# Example
+print(find_max([3, 7, 2, 9, 1]))  # 9
+```
+
+---
+
+### 8. Remove Duplicates from List
+**Question:** Remove duplicates while preserving order.
+
+```python
+def remove_duplicates(lst):
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+
+# Example
+print(remove_duplicates([1, 2, 2, 3, 4, 3, 5]))  # [1, 2, 3, 4, 5]
+```
+
+---
+
+### 9. Count Vowels in String
+**Question:** Count vowels (a, e, i, o, u) in string.
+
+```python
+def count_vowels(s):
+    vowels = set('aeiouAEIOU')
+    return sum(1 for char in s if char in vowels)
+
+# Example
+print(count_vowels("Hello World"))  # 3
+```
+
+---
+
+### 10. Binary Search
+**Question:** Implement binary search on sorted list.
+
+```python
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+# Example
+arr = [1, 3, 5, 7, 9, 11]
+print(binary_search(arr, 7))  # 3
+```
+
+---
+
+### 11. Bubble Sort
+**Question:** Sort list using bubble sort.
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if not swapped:
+            break
+    return arr
+
+# Example
+print(bubble_sort([64, 34, 25, 12, 22, 11, 90]))
+```
+
+---
+
+### 12. Find GCD (Euclidean Algorithm)
+**Question:** Find greatest common divisor.
+
+```python
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+# Example
+print(gcd(48, 18))  # 6
+```
+
+---
+
+### 13. Check Anagram
+**Question:** Check if two strings are anagrams.
+
+```python
+def is_anagram(s1, s2):
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    return sorted(s1) == sorted(s2)
+
+# Example
+print(is_anagram("listen", "silent"))  # True
+```
+
+---
+
+### 14. Find Second Largest Number
+**Question:** Find second largest in list.
+
+```python
+def second_largest(lst):
+    unique_nums = list(set(lst))
+    if len(unique_nums) < 2:
+        return None
+    unique_nums.sort()
+    return unique_nums[-2]
+
+# Example
+print(second_largest([10, 20, 4, 45, 99, 99]))  # 45
+```
+
+---
+
+### 15. Fibonacci (Recursive)
+**Question:** Get nth Fibonacci number recursively.
+
+```python
+def fib_recursive(n):
+    if n <= 1:
+        return n
+    return fib_recursive(n - 1) + fib_recursive(n - 2)
+
+# Example
+print(fib_recursive(7))  # 13
+```
+**Note:** Inefficient for large n (exponential time).
+
+---
+
+### 16. Sum of Digits
+**Question:** Sum all digits in a number.
+
+```python
+def sum_of_digits(n):
+    n = abs(n)
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total
+
+# Example
+print(sum_of_digits(12345))  # 15
+```
+
+---
+
+### 17. Check Leap Year
+**Question:** Check if year is leap year.
+
+```python
+def is_leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+# Example
+print(is_leap_year(2024))  # True
+print(is_leap_year(2023))  # False
+```
+
+---
+
+### 18. Pattern Printing (Triangle)
+**Question:** Print right-angled triangle of stars.
+
+```python
+def print_triangle(n):
+    for i in range(1, n + 1):
+        print('*' * i)
+
+# Example
+print_triangle(5)
+# Output:
+# *
+# **
+# ***
+# ****
+# *****
+```
+
+---
+
+### 19. Merge Two Sorted Lists
+**Question:** Merge two sorted lists into one sorted list.
+
+```python
+def merge_sorted(list1, list2):
+    result = []
+    i = j = 0
+    while i < len(list1) and j < len(list2):
+        if list1[i] < list2[j]:
+            result.append(list1[i])
+            i += 1
+        else:
+            result.append(list2[j])
+            j += 1
+    result.extend(list1[i:])
+    result.extend(list2[j:])
+    return result
+
+# Example
+print(merge_sorted([1, 3, 5], [2, 4, 6]))  # [1, 2, 3, 4, 5, 6]
+```
+
+---
+
+### 20. Find Missing Number
+**Question:** Find missing number from 1 to n.
+
+```python
+def find_missing(arr, n):
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    return expected_sum - actual_sum
+
+# Example
+print(find_missing([1, 2, 4, 5, 6], 6))  # 3
+```
+
+---
+
+### 21. Count Character Frequency
+**Question:** Count frequency of each character in string.
+
+```python
+def char_frequency(s):
+    freq = {}
+    for char in s:
+        freq[char] = freq.get(char, 0) + 1
+    return freq
+
+# Example
+print(char_frequency("hello"))
+# {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+```
+
+---
+
+## **Summary Table**
+
+| Type | Count |
+|------|-------|
+| Theory Questions | 4 |
+| Coding Questions | 21 |
+| **Total** | **25** |
