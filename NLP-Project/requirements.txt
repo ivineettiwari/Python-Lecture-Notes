@@ -1,0 +1,10 @@
+nltk
+spacy
+gensim
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+wordcloud
+tensorflow
